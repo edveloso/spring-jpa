@@ -32,6 +32,8 @@ public class PersonControler {
 		logger.debug("Is dao autowired? " + person != null);
 		personDAO.addPerson(person);
 		
+		
+		model.addAttribute("persons", personDAO.list());
 		model.addAttribute("result", "Person added");
 		return "index.jsp";
 	}

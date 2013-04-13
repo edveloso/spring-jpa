@@ -1,7 +1,10 @@
 package com.github.edveloso.spring.database;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import org.apache.log4j.Logger;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,4 +25,10 @@ public class PersonDAO implements IPersonDAO {
 		entityManager.persist(person);
 		entityManager.flush();
 	}	
+	
+	public List<Person> list(){
+	  Query query = entityManager.createNamedQuery("listAll");
+	  return query.getResultList();
+	}
+	
 }
