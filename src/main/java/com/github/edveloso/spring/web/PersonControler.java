@@ -12,7 +12,7 @@ import com.github.edveloso.spring.database.IPersonDAO;
 import com.github.edveloso.spring.database.domain.Person;
 
 @Controller
-public class PersonServlet {
+public class PersonControler {
 	
 	@Autowired
 	private IPersonDAO personDAO;
