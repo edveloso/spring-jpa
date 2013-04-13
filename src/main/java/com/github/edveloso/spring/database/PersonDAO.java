@@ -1,11 +1,12 @@
-package org.madbit.spring.database;
+package com.github.edveloso.spring.database;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.apache.log4j.Logger;
-import org.madbit.spring.database.domain.Person;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.github.edveloso.spring.database.domain.Person;
 
 public class PersonDAO implements IPersonDAO {
 	

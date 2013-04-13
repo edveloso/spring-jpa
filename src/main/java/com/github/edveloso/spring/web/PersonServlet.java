@@ -1,14 +1,15 @@
-package org.madbit.spring.web;
+package com.github.edveloso.spring.web;
 
 import org.apache.log4j.Logger;
-import org.madbit.spring.database.IPersonDAO;
-import org.madbit.spring.database.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.github.edveloso.spring.database.IPersonDAO;
+import com.github.edveloso.spring.database.domain.Person;
 
 @Controller
 public class PersonServlet {

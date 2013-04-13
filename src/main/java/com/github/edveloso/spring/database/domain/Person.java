@@ -1,4 +1,4 @@
-package org.madbit.spring.database.domain;
+package com.github.edveloso.spring.database.domain;
 
 import java.io.Serializable;
 

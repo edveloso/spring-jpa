@@ -13,7 +13,7 @@
     <!-- File appender for application logging --> 
     <appender name="LOG" class="org.apache.log4j.RollingFileAppender">
         <param name="Threshold" value="DEBUG" />        
-        <param name="File" value="/logs/Spring/spring-jpa.log" /> 
+        <param name="File" value="spring-jpa.log" /> 
         <param name="MaxFileSize" value="2MB" />
         <param name="MaxBackupIndex" value="1" />
         <param name="append" value="true" />

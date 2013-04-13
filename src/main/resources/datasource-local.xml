@@ -34,7 +34,7 @@
 	<!-- Enable enable declarative transaction management with @Transactional -->
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
-	<bean id="personDAO" class="org.madbit.spring.database.PersonDAO" />
+	<bean id="personDAO" class="com.github.edveloso.spring.database.PersonDAO" />
 
 	<!-- Register a PersistenceAnnotationBeanPostProcessor userd for @PersistenceContext -->
 	<!-- <context:annotation-config /> -->
